@@ -1,4 +1,4 @@
-module Kenji where
+module Characters.Kenji where
 
 import Prelude hiding (String)
 import SocialLink

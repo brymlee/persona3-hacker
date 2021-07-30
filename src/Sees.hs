@@ -1,8 +1,8 @@
 module Sees where
 
 import Prelude hiding (String)
-import Mitsuru 
-import Fuuka 
+import Characters.Mitsuru 
+import Characters.Fuuka 
 import SocialLink
 
 sees :: Group 

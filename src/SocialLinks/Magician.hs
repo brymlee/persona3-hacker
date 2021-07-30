@@ -1,8 +1,8 @@
-module Magician where
+module SocialLinks.Magician where
 
 import Prelude hiding (String)
-import Kenji 
-import Emiri
+import Characters.Kenji 
+import Characters.Emiri
 import SocialLink
 
 magician :: SocialLink

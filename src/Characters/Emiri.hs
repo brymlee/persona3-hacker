@@ -1,4 +1,4 @@
-module Emiri where
+module Characters.Emiri where
 
 import SocialLink
 

@@ -1,4 +1,4 @@
-module Mitsuru where
+module Characters.Mitsuru where
 
 import SocialLink 
 

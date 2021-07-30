@@ -3,23 +3,24 @@ module Main where
 import Prelude hiding (String)
 import qualified Data.String as S
 import Control.Monad.State 
-import Hidetoshi 
-import Mitsuru 
-import Fuuka 
-import Kenji 
 import Sees 
-import Fool 
-import Magician 
-import Priestess 
-import Empress 
-import Emperor 
+import Characters.Hidetoshi 
+import Characters.Mitsuru 
+import Characters.Fuuka 
+import Characters.Kenji 
+import Characters.Emiri
+import SocialLinks.Fool 
+import SocialLinks.Magician 
+import SocialLinks.Priestess 
+import SocialLinks.Empress 
+import SocialLinks.Emperor 
 import SocialLink 
 
 type Value = (SocialLinks, Groups, Characters)
 type State' = State Value Value
 
 characters :: [Character]
-characters = [mitsuru, kenji, fuuka, hidetoshi]
+characters = [mitsuru, kenji, fuuka, hidetoshi, emiri]
 
 groups :: [Group]
 groups = [sees]

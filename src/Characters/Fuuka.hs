@@ -1,4 +1,4 @@
-module Fuuka where
+module Characters.Fuuka where
 
 import Prelude hiding (String)
 import SocialLink 

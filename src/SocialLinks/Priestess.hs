@@ -1,7 +1,7 @@
-module Priestess where
+module SocialLinks.Priestess where
 
 import Prelude hiding (String)
-import Fuuka 
+import Characters.Fuuka 
 import SocialLink
 
 priestess :: SocialLink

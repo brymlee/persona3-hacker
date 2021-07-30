@@ -1,4 +1,4 @@
-module Fool (fool) where
+module SocialLinks.Fool where
 
 import Prelude hiding (String)
 import SocialLink 

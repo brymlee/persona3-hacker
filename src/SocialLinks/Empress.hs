@@ -1,8 +1,8 @@
-module Empress where
+module SocialLinks.Empress where
 
 import Prelude hiding (String)
 import SocialLink
-import Mitsuru 
+import Characters.Mitsuru 
 
 empress :: SocialLink
 empress = SocialLink (Ranks (Rank1 (Automatic Nothing))

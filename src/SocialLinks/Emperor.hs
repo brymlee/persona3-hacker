@@ -1,8 +1,8 @@
-module Emperor where
+module SocialLinks.Emperor where
 
 import Prelude hiding (String)
 import SocialLink 
-import Hidetoshi 
+import Characters.Hidetoshi 
 
 emperor :: SocialLink
 emperor = SocialLink (Ranks (Rank1 (Automatic Nothing))
