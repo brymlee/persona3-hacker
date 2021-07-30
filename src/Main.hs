@@ -9,24 +9,27 @@ import Characters.Mitsuru
 import Characters.Fuuka 
 import Characters.Kenji 
 import Characters.Emiri
+import Characters.Bunkichi
+import Characters.Mitsuko
 import SocialLinks.Fool 
 import SocialLinks.Magician 
 import SocialLinks.Priestess 
 import SocialLinks.Empress 
 import SocialLinks.Emperor 
+import SocialLinks.Hierophant
 import SocialLink 
 
 type Value = (SocialLinks, Groups, Characters)
 type State' = State Value Value
 
 characters :: [Character]
-characters = [mitsuru, kenji, fuuka, hidetoshi, emiri]
+characters = [mitsuru, kenji, fuuka, hidetoshi, emiri, bunkichi, mitsuko]
 
 groups :: [Group]
 groups = [sees]
 
 socialLinks :: [SocialLink]
-socialLinks = [fool, magician, priestess, empress, emperor]
+socialLinks = [fool, magician, priestess, empress, emperor, hierophant]
 
 getValue :: State'
 getValue = do

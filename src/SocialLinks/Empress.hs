@@ -26,4 +26,4 @@ empress = SocialLink (Ranks (Rank1 (Automatic Nothing))
                                          Only (String "Say something to the guy"), 
                                          Anything]))
                             (Rank9 (Say [Only (String "That makes me happy")]))
-                            (Rank10 (Automatic Nothing))) (String "Empress") $ Right mitsuru
+                            (Rank10 (Automatic Nothing))) (String "Empress") $ Right [mitsuru]

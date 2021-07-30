@@ -45,7 +45,7 @@ data Trigger = Automatic (Maybe Date) |
                Confront Character 
                  deriving (Show)
 data Date = Date Int Int deriving Show
-type Host = Either Group Character 
+type Host = Either Group Characters 
 type Arcana = String
 data SocialLink = SocialLink Ranks Arcana Host deriving (Show)
 type SocialLinks = [SocialLink]

@@ -14,4 +14,4 @@ priestess = SocialLink (Ranks (Rank1 (Automatic Nothing))
                               (Rank7 (Say [Anything, Anything]))
                               (Rank8 (Say [Anything, Only (String "I want to be with you too")]))
                               (Rank9 (Say [Anything, Anything]))
-                              (Rank10 (Automatic Nothing))) (String "Priestess") $ Right fuuka
+                              (Rank10 (Automatic Nothing))) (String "Priestess") $ Right [fuuka]

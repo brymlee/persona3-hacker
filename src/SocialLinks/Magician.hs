@@ -22,4 +22,4 @@ magician = SocialLink (Ranks (Rank1 (Automatic (Just (Date 4 22))))
                                           ChooseOne [(String "You should go with her"),
                                                      (String "You should talk to her")]]))
                              (Rank9 (Confront emiri))
-                             (Rank10 (Automatic Nothing))) (String "Magician") $ Right kenji
+                             (Rank10 (Automatic Nothing))) (String "Magician") $ Right [kenji]

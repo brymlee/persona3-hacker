@@ -14,4 +14,4 @@ emperor = SocialLink (Ranks (Rank1 (Automatic Nothing))
                             (Rank7 (Say [Only (String "He should suffer")])) 
                             (Rank8 (Say [Anything, Only (String "It wasn't me")]))
                             (Rank9 (Say [Only (String "Dont' blame yourself")]))
-                            (Rank10 (Automatic Nothing))) (String "Emperor") $ Right hidetoshi
+                            (Rank10 (Automatic Nothing))) (String "Emperor") $ Right [hidetoshi]
