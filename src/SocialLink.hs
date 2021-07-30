@@ -33,11 +33,16 @@ data RankReference = ReferRank1 Rank1 |
                      ReferRank10 Rank10 
                        deriving (Show)
 data Ranks = Ranks Rank1 Rank2 Rank3 Rank4 Rank5 Rank6 Rank7 Rank8 Rank9 Rank10 deriving (Show)
+data Message = Anything | 
+               ChooseOne [String] | 
+               Only String 
+                 deriving (Show)
+type Lines = [Message]
 data Trigger = Automatic (Maybe Date) | 
                Skip RankReference | 
                Choose String | 
-               Say String | 
-               Confront String
+               Say Lines | 
+               Confront Character 
                  deriving (Show)
 data Date = Date Int Int deriving Show
 type Host = Either Group Character 
