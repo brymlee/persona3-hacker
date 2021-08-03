@@ -1,4 +1,5 @@
 module SocialLink where
+
 import Prelude hiding (String)
 import qualified Data.String as S
 

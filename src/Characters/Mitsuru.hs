@@ -3,4 +3,4 @@ module Characters.Mitsuru where
 import SocialLink 
 
 mitsuru :: Character
-mitsuru = Character (String "Mitsuru") $ String "Kirijo"
+mitsuru = String "Mitsuru" `Character` String "Kirijo"
