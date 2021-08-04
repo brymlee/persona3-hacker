@@ -43,7 +43,8 @@ data Trigger = Automatic (Maybe Date) |
                Skip RankReference | 
                Choose String | 
                Say Lines | 
-               Confront Character 
+               Confront Character |
+               LookAway
                  deriving (Show)
 data Date = Date Int Int deriving Show
 type Host = Either Group Characters 

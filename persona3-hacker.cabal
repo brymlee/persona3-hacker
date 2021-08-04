@@ -46,6 +46,7 @@ executable persona3-hacker
       Characters.Bunkichi,
       Characters.Mitsuko,
       Characters.Yukari,
+      Characters.Kazushi,
       SocialLinks.Emperor,
       SocialLinks.Empress,
       SocialLinks.Fool,
@@ -53,6 +54,7 @@ executable persona3-hacker
       SocialLinks.Priestess,
       SocialLinks.Hierophant
       SocialLinks.Lovers,
+      SocialLinks.Chariot,
       SocialLink,
       Sees
     default-language: Haskell2010
