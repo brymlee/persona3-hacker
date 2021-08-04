@@ -15,6 +15,7 @@ import Characters.Yukari
 import Characters.Kazushi
 import Characters.Chihiro
 import Characters.Maya
+import Characters.Keisuke
 import SocialLinks.Fool 
 import SocialLinks.Magician 
 import SocialLinks.Priestess 
@@ -25,6 +26,7 @@ import SocialLinks.Lovers
 import SocialLinks.Chariot
 import SocialLinks.Justice
 import SocialLinks.Hermit
+import SocialLinks.Fortune
 import SocialLink 
 
 type Value = (SocialLinks, Groups, Characters)
@@ -41,7 +43,8 @@ characters = [mitsuru,
               yukari, 
               kazushi, 
               chihiro, 
-              maya]
+              maya,
+              keisuke]
 
 groups :: [Group]
 groups = [sees]
