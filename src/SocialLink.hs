@@ -39,7 +39,10 @@ data Message = Anything |
                Only String 
                  deriving (Show)
 type Lines = [Message]
-data Trigger = Automatic (Maybe Date) | 
+data Event' = Automatic (Maybe Date) | 
+              After String
+                deriving (Show)
+data Trigger = Event Event' | 
                Skip RankReference | 
                Choose String | 
                Say Lines | 

@@ -6,7 +6,7 @@ import Characters.Bunkichi
 import Characters.Mitsuko
 
 hierophant :: SocialLink
-hierophant = SocialLink (Ranks (Rank1 (Automatic Nothing))
+hierophant = SocialLink (Ranks (Rank1 (Event (Automatic Nothing)))
                                (Rank2 (Say [Only (String "Tell him"),
                                             Only (String "Thanks"),
                                             Anything,
@@ -29,4 +29,4 @@ hierophant = SocialLink (Ranks (Rank1 (Automatic Nothing))
                                             Anything]))
                                (Rank8 (Say [Anything, Anything, Anything]))
                                (Rank9 (Say [Anything, Anything]))
-                               (Rank10 (Automatic Nothing))) (String "Hierophant") $ Right [bunkichi, mitsuko]
+                               (Rank10 (Event (Automatic Nothing)))) (String "Hierophant") $ Right [bunkichi, mitsuko]

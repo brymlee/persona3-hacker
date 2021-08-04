@@ -5,7 +5,7 @@ import SocialLink
 import Characters.Hidetoshi 
 
 emperor :: SocialLink
-emperor = SocialLink (Ranks (Rank1 (Automatic Nothing))
+emperor = SocialLink (Ranks (Rank1 (Event (Automatic Nothing)))
                             (Rank2 (Say [Only (String "it's a waste of time")]))
                             (Rank3 (Say [Anything]))
                             (Rank4 (Say [Anything, Only (String "Good work")]))
@@ -14,4 +14,4 @@ emperor = SocialLink (Ranks (Rank1 (Automatic Nothing))
                             (Rank7 (Say [Only (String "He should suffer")])) 
                             (Rank8 (Say [Anything, Only (String "It wasn't me")]))
                             (Rank9 (Say [Only (String "Dont' blame yourself")]))
-                            (Rank10 (Automatic Nothing))) (String "Emperor") $ Right [hidetoshi]
+                            (Rank10 (Event (Automatic Nothing)))) (String "Emperor") $ Right [hidetoshi]
