@@ -54,6 +54,7 @@ executable persona3-hacker
       Characters.Maiko,
       Characters.Ryoji,
       Characters.Andre,
+      Characters.Tanaka,
       SocialLinks.Emperor,
       SocialLinks.Empress,
       SocialLinks.Fool,
@@ -69,6 +70,7 @@ executable persona3-hacker
       SocialLinks.HangedMan,
       SocialLinks.Death,
       SocialLinks.Temperance,
+      SocialLinks.Devil,
       SocialLink,
       Sees
     default-language: Haskell2010
