@@ -58,6 +58,7 @@ executable persona3-hacker
       Characters.Mutatsu,
       Characters.Mamoru,
       Characters.Nozomi,
+      Characters.Akinari,
       SocialLinks.Emperor,
       SocialLinks.Empress,
       SocialLinks.Fool,
@@ -77,6 +78,7 @@ executable persona3-hacker
       SocialLinks.Tower,
       SocialLinks.Star,
       SocialLinks.Moon,
+      SocialLinks.Sun,
       SocialLink,
       Sees
     default-language: Haskell2010
