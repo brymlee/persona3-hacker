@@ -14,6 +14,6 @@ fool = SocialLink (Ranks (Rank1 (Event (Date (Just (4, 18)))))
                          (Rank7 (Event (Date (Just (11, 4)))))
                          (Rank8 (Skip (ReferRank9 rank9)))
                          rank9
-                         (Rank10 (Choose (String "Spare Ryoji on December 31st")))) (String "Fool") $ Left sees
+                         (Rank10 (Choose (String "Spare Ryoji on December 31st")))) (String "Fool") $ ReferGroup sees
                            where 
                              rank9 = Rank9 (Event (Date (Just (11, 28))))

@@ -22,4 +22,4 @@ magician = SocialLink (Ranks (Rank1 (Event (Date (Just (4, 22)))))
                                           ChooseOne [(String "You should go with her"),
                                                      (String "You should talk to her")]]))
                              (Rank9 (Confront emiri))
-                             (Rank10 (Event (Date Nothing)))) (String "Magician") $ Right [kenji]
+                             (Rank10 (Event (Date Nothing)))) (String "Magician") $ ReferCharacters [kenji]

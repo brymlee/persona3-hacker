@@ -14,6 +14,6 @@ devil = SocialLink (Ranks (Rank1 result)
                           (Rank7 result)
                           (Rank8 result)
                           (Rank9 result)
-                          (Rank10 result)) (String "Devil") $ Right [tanaka]
+                          (Rank10 result)) (String "Devil") $ ReferCharacters [tanaka]
           where
             result = Confront tanaka

@@ -20,4 +20,4 @@ temperance = SocialLink (Ranks (Rank1 (Event (Date Nothing)))
                                (Rank7 (Say [Only (String "That's a good idea")]))
                                (Rank8 (Say [Only (String "He'll agree for sure")]))
                                (Rank9 (Say [Only (String "Ask about his country")]))
-                               (Rank10 (Event (Date Nothing)))) (String "Temperance") $ Right [andre]
+                               (Rank10 (Event (Date Nothing)))) (String "Temperance") $ ReferCharacters [andre]

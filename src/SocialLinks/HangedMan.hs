@@ -24,4 +24,4 @@ hangedMan = SocialLink (Ranks (Rank1 (Event (Date Nothing)))
                                            Only (String "Yeah, you did good"),
                                            Only (String "Choose your dad")]))
                               (Rank9 (Say [Only (String "We're friends forever")]))
-                              (Rank10 (Event (Date Nothing)))) (String "Hanged Man") $ Right [maiko]
+                              (Rank10 (Event (Date Nothing)))) (String "Hanged Man") $ ReferCharacters [maiko]

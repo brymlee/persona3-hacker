@@ -14,4 +14,4 @@ death = SocialLink (Ranks (Rank1 (Event (Date (Just (6, 12)))))
                           (Rank7 (Event (Date (Just (10, 6)))))
                           (Rank8 (Event (Date Nothing)))
                           (Rank9 (Event (Date Nothing)))
-                          (Rank10 (Event (Date (Just (11, 4)))))) (String "Death") $ Right [ryoji]
+                          (Rank10 (Event (Date (Just (11, 4)))))) (String "Death") $ ReferCharacters [ryoji]

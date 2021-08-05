@@ -19,4 +19,4 @@ lovers = SocialLink (Ranks (Rank1 (Event (Date Nothing)))
                            (Rank8 (Say [Only (String "All right"),
                                         Anything]))
                            (Rank9 (Say [Only (String "..........")]))
-                           (Rank10 (Event (Date Nothing)))) (String "Lovers") $ Right [yukari]
+                           (Rank10 (Event (Date Nothing)))) (String "Lovers") $ ReferCharacters [yukari]

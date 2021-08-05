@@ -28,4 +28,4 @@ justice = SocialLink (Ranks (Rank1 (Event (Date Nothing)))
                                          Only (String "Wait to see what happens"),
                                          Anything,
                                          Only (String "What's wrong")]))
-                            (Rank10 (Event (Date Nothing)))) (String "Justice") $ Right [chihiro]
+                            (Rank10 (Event (Date Nothing)))) (String "Justice") $ ReferCharacters [chihiro]

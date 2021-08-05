@@ -28,4 +28,4 @@ star = SocialLink (Ranks (Rank1 (Event (Date Nothing)))
                                       Only (String "Do a victory celebration"),
                                       Anything,
                                       Only (String "Thank him for his generosity")]))
-                         (Rank10 (Event (Date Nothing)))) (String "Star") $ Right [mamoru]
+                         (Rank10 (Event (Date Nothing)))) (String "Star") $ ReferCharacters [mamoru]

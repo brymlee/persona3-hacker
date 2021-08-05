@@ -25,4 +25,4 @@ chariot = SocialLink (Ranks (Rank1 (Event (Date Nothing)))
                                          Only (String "You need to toughen up")]))
                             (Rank8 LookAway)
                             (Rank9 (Say [Only (String "I'm fine")]))
-                            (Rank10 (Event (Date Nothing)))) (String "Chariot") $ Right [kazushi]
+                            (Rank10 (Event (Date Nothing)))) (String "Chariot") $ ReferCharacters [kazushi]

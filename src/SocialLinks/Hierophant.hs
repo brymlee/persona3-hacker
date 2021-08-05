@@ -29,4 +29,4 @@ hierophant = SocialLink (Ranks (Rank1 (Event (Date Nothing)))
                                             Anything]))
                                (Rank8 (Say [Anything, Anything, Anything]))
                                (Rank9 (Say [Anything, Anything]))
-                               (Rank10 (Event (Date Nothing)))) (String "Hierophant") $ Right [bunkichi, mitsuko]
+                               (Rank10 (Event (Date Nothing)))) (String "Hierophant") $ ReferCharacters [bunkichi, mitsuko]

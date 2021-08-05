@@ -14,6 +14,6 @@ sun = SocialLink (Ranks (Rank1 result)
                         (Rank7 result)
                         (Rank8 result)
                         (Rank9 result)
-                        (Rank10 result)) (String "Sun") $ Right [akinari]
+                        (Rank10 result)) (String "Sun") $ ReferCharacters [akinari]
         where
           result = Confront akinari

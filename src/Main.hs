@@ -25,6 +25,12 @@ import Characters.Mutatsu
 import Characters.Mamoru
 import Characters.Nozomi
 import Characters.Akinari
+import Enemies.Nyx
+import Enemies.CarnalSnake
+import Enemies.FierceCyclops
+import Enemies.JotunOfGrief
+import Enemies.NobleSeeker
+import Enemies.WorldBalance
 import SocialLinks.Fool 
 import SocialLinks.Magician 
 import SocialLinks.Priestess 
@@ -45,12 +51,21 @@ import SocialLinks.Tower
 import SocialLinks.Star
 import SocialLinks.Moon
 import SocialLinks.Sun
+import SocialLinks.Judgement
 import SocialLink 
 
-type Value = (SocialLinks, Groups, Characters)
+type Value = (SocialLinks, Groups, Characters, Enemies)
 type State' = State Value Value
 
-characters :: [Character]
+enemies :: Enemies
+enemies = [nyx,
+           carnalSnake,
+           fierceCyclops,
+           jotunOfGrief,
+           nobleSeeker,
+           worldBalance]
+
+characters :: Characters
 characters = [mitsuru, 
               kenji, 
               fuuka, 
@@ -71,12 +86,13 @@ characters = [mitsuru,
               mutatsu,
               mamoru,
               nozomi,
-              akinari]
+              akinari, 
+              (toCharacter nyx)]
 
-groups :: [Group]
+groups :: Groups
 groups = [sees]
 
-socialLinks :: [SocialLink]
+socialLinks :: SocialLinks
 socialLinks = [fool, 
                magician, 
                priestess, 
@@ -95,14 +111,15 @@ socialLinks = [fool,
                tower,
                star,
                moon,
-               sun]
+               sun,
+               judgement]
 
 getValue :: State'
 getValue = do
-  put (socialLinks, groups, characters)
+  put (socialLinks, groups, characters, enemies)
   result <- get
   return result
 
 main :: IO()
 main = do
-  putStrLn $ show $ evalState getValue $ ([], [], [])
+  putStrLn $ show $ evalState getValue $ ([], [], [], [])

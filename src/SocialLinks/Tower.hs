@@ -23,4 +23,4 @@ tower = SocialLink (Ranks (Rank1 (Event (Date Nothing)))
                           (Rank9 (Say [Anything,
                                        Anything,
                                        Anything]))
-                          (Rank10 (Event (Date Nothing)))) (String "Tower") $ Right [mutatsu]
+                          (Rank10 (Event (Date Nothing)))) (String "Tower") $ ReferCharacters [mutatsu]

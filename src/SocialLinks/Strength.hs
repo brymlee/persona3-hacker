@@ -29,4 +29,4 @@ strength = SocialLink (Ranks (Rank1 (Event (Date Nothing)))
                                                      String "A girl"]]))
                              (Rank9 (Say [Only (String "Forgot about what?"),
                                           Only (String "An instructor")]))
-                             (Rank10 (Event (Date Nothing)))) (String "Strength") $ Right [yuko]
+                             (Rank10 (Event (Date Nothing)))) (String "Strength") $ ReferCharacters [yuko]

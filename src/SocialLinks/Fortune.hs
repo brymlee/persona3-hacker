@@ -24,4 +24,4 @@ fortune = SocialLink (Ranks (Rank1 (Event (Date Nothing)))
                                          Anything,
                                          Anything,
                                          Anything]))
-                            (Rank10 (Event (Date Nothing)))) (String "Fortune") $ Right [keisuke]
+                            (Rank10 (Event (Date Nothing)))) (String "Fortune") $ ReferCharacters [keisuke]

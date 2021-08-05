@@ -2,6 +2,7 @@ module SocialLink where
 
 import Prelude hiding (String)
 import qualified Data.String as S
+import Tartarus
 
 data String = String S.String
 
@@ -32,7 +33,17 @@ data RankReference = ReferRank1 Rank1 |
                      ReferRank9 Rank9 |
                      ReferRank10 Rank10 
                        deriving (Show)
-data Ranks = Ranks Rank1 Rank2 Rank3 Rank4 Rank5 Rank6 Rank7 Rank8 Rank9 Rank10 deriving (Show)
+data Ranks = Ranks Rank1 
+                   Rank2 
+                   Rank3 
+                   Rank4 
+                   Rank5 
+                   Rank6 
+                   Rank7 
+                   Rank8 
+                   Rank9 
+                   Rank10 
+               deriving (Show)
 data Message = Anything | 
                ChooseOne [String] | 
                Only String 
@@ -46,9 +57,23 @@ data Trigger = Event Event' |
                Choose String | 
                Say Lines | 
                Confront Character |
+               Reach Floor |
+               Defeat Enemy |
                LookAway
                  deriving (Show)
-type Host = Either Group Characters 
+
+data Enemy = Enemy Character deriving (Show)
+
+class ToCharacter a where
+  toCharacter :: a -> Character
+
+instance ToCharacter Enemy where
+  toCharacter (Enemy character) = character
+
+data Host = ReferGroup Group | 
+            ReferCharacters [Character] |
+            ReferEnemy Enemy
+              deriving (Show)
 type Arcana = String
 data SocialLink = SocialLink Ranks Arcana Host deriving (Show)
 type SocialLinks = [SocialLink]
@@ -74,3 +99,4 @@ instance ToGroup String where
 type Name = String
 data Character = Character [Name] deriving (Show)
 type Characters = [Character]
+type Enemies = [Enemy]

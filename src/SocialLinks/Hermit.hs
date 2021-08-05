@@ -22,4 +22,4 @@ hermit = SocialLink (Ranks (Rank1 (Event (Date Nothing)))
                            (Rank9 (Say [Only (String "No way!"),
                                         Anything,
                                         Only (String "What're you planning?")]))
-                           (Rank10 (Event (Date Nothing)))) (String "Hermit") $ Right [maya]
+                           (Rank10 (Event (Date Nothing)))) (String "Hermit") $ ReferCharacters [maya]

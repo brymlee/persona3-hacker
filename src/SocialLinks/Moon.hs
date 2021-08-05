@@ -16,4 +16,4 @@ moon = SocialLink (Ranks (Rank1 (Event (Date Nothing)))
                          (Rank8 (Say [Only (String "Oh brother")]))
                          (Rank9 (Say [Anything,
                                       Anything]))
-                         (Rank10 (Event (Date Nothing)))) (String "Moon") $ Right [nozomi]
+                         (Rank10 (Event (Date Nothing)))) (String "Moon") $ ReferCharacters [nozomi]
