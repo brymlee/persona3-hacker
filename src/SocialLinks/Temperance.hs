@@ -2,7 +2,7 @@ module SocialLinks.Temperance where
 
 import Prelude hiding (String)
 import SocialLink 
-import Characters.Bebe
+import Characters.Andre
 
 temperance :: SocialLink
 temperance = SocialLink (Ranks (Rank1 (Event (Date Nothing)))
@@ -20,4 +20,4 @@ temperance = SocialLink (Ranks (Rank1 (Event (Date Nothing)))
                                (Rank7 (Say [Only (String "That's a good idea")]))
                                (Rank8 (Say [Only (String "He'll agree for sure")]))
                                (Rank9 (Say [Only (String "Ask about his country")]))
-                               (Rank10 (Event (Date Nothing)))) (String "Temperance") $ Right [bebe]
+                               (Rank10 (Event (Date Nothing)))) (String "Temperance") $ Right [andre]

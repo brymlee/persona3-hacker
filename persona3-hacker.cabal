@@ -53,7 +53,7 @@ executable persona3-hacker
       Characters.Yuko,
       Characters.Maiko,
       Characters.Ryoji,
-      Characters.Bebe,
+      Characters.Andre,
       SocialLinks.Emperor,
       SocialLinks.Empress,
       SocialLinks.Fool,

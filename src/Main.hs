@@ -19,7 +19,7 @@ import Characters.Keisuke
 import Characters.Yuko
 import Characters.Maiko
 import Characters.Ryoji
-import Characters.Bebe
+import Characters.Andre
 import SocialLinks.Fool 
 import SocialLinks.Magician 
 import SocialLinks.Priestess 
@@ -56,7 +56,7 @@ characters = [mitsuru,
               yuko,
               maiko,
               ryoji,
-              bebe]
+              andre]
 
 groups :: [Group]
 groups = [sees]
