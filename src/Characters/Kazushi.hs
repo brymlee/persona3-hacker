@@ -4,4 +4,5 @@ import Prelude hiding (String)
 import SocialLink
 
 kazushi :: Character
-kazushi = String "Kazushi" `Character` String "Miyamoto"
+kazushi = Character [String "Kazushi",
+                     String "Miyamoto"]

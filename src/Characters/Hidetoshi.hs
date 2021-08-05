@@ -4,4 +4,5 @@ import Prelude hiding (String)
 import SocialLink
 
 hidetoshi :: Character
-hidetoshi = String "Hidetoshi" `Character` String "Odagiri"
+hidetoshi = Character [String "Hidetoshi",
+                       String "Odagiri"]

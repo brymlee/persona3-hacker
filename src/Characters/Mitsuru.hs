@@ -1,6 +1,8 @@
 module Characters.Mitsuru where
 
+import Prelude hiding (String)
 import SocialLink 
 
 mitsuru :: Character
-mitsuru = String "Mitsuru" `Character` String "Kirijo"
+mitsuru = Character [String "Mitsuru",
+                     String "Kirijo"]

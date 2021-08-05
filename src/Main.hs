@@ -19,6 +19,7 @@ import Characters.Keisuke
 import Characters.Yuko
 import Characters.Maiko
 import Characters.Ryoji
+import Characters.Bebe
 import SocialLinks.Fool 
 import SocialLinks.Magician 
 import SocialLinks.Priestess 
@@ -33,6 +34,7 @@ import SocialLinks.Fortune
 import SocialLinks.Strength
 import SocialLinks.HangedMan
 import SocialLinks.Death
+import SocialLinks.Temperance
 import SocialLink 
 
 type Value = (SocialLinks, Groups, Characters)
@@ -53,7 +55,8 @@ characters = [mitsuru,
               keisuke,
               yuko,
               maiko,
-              ryoji]
+              ryoji,
+              bebe]
 
 groups :: [Group]
 groups = [sees]
@@ -71,7 +74,8 @@ socialLinks = [fool,
                hermit,
                strength,
                hangedMan,
-               death]
+               death,
+               temperance]
 
 getValue :: State'
 getValue = do

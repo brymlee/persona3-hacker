@@ -71,6 +71,6 @@ class ToGroup a where
 
 instance ToGroup String where
   toGroup groups name = validateGroup $ filter (\ group -> (toName group) == name) groups
-
-data Character = Character String String deriving (Show)
+type Name = String
+data Character = Character [Name] deriving (Show)
 type Characters = [Character]
