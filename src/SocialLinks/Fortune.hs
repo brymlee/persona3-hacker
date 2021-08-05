@@ -5,7 +5,7 @@ import SocialLink
 import Characters.Keisuke
 
 fortune :: SocialLink
-fortune = SocialLink (Ranks (Rank1 (Event (Automatic Nothing)))
+fortune = SocialLink (Ranks (Rank1 (Event (Date Nothing)))
                             (Rank2 (Say [Anything,
                                          Anything]))
                             (Rank3 (Say [Only (String "Great job!"),
@@ -24,4 +24,4 @@ fortune = SocialLink (Ranks (Rank1 (Event (Automatic Nothing)))
                                          Anything,
                                          Anything,
                                          Anything]))
-                            (Rank10 (Event (Automatic Nothing)))) (String "Fortune") $ Right [keisuke]
+                            (Rank10 (Event (Date Nothing)))) (String "Fortune") $ Right [keisuke]

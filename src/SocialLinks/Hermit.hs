@@ -5,7 +5,7 @@ import SocialLink
 import Characters.Maya
 
 hermit :: SocialLink
-hermit = SocialLink (Ranks (Rank1 (Event (Automatic Nothing)))
+hermit = SocialLink (Ranks (Rank1 (Event (Date Nothing)))
                            (Rank2 (Say [Only (String "Of course"),
                                         Only (String "The outdoors are overrated")]))
                            (Rank3 (Say [Only (String "Oh really?"),
@@ -22,4 +22,4 @@ hermit = SocialLink (Ranks (Rank1 (Event (Automatic Nothing)))
                            (Rank9 (Say [Only (String "No way!"),
                                         Anything,
                                         Only (String "What're you planning?")]))
-                           (Rank10 (Event (Automatic Nothing)))) (String "Hermit") $ Right [maya]
+                           (Rank10 (Event (Date Nothing)))) (String "Hermit") $ Right [maya]

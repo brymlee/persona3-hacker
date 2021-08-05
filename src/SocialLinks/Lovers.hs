@@ -5,7 +5,7 @@ import SocialLink
 import Characters.Yukari
 
 lovers :: SocialLink
-lovers = SocialLink (Ranks (Rank1 (Event (Automatic Nothing)))
+lovers = SocialLink (Ranks (Rank1 (Event (Date Nothing)))
                            (Rank2 (Say [Only (String "Pink's cute"),
                                         Only (String "That's messed up")]))
                            (Rank3 (Say [Anything]))
@@ -19,4 +19,4 @@ lovers = SocialLink (Ranks (Rank1 (Event (Automatic Nothing)))
                            (Rank8 (Say [Only (String "All right"),
                                         Anything]))
                            (Rank9 (Say [Only (String "..........")]))
-                           (Rank10 (Event (Automatic Nothing)))) (String "Lovers") $ Right [yukari]
+                           (Rank10 (Event (Date Nothing)))) (String "Lovers") $ Right [yukari]

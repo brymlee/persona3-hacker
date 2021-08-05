@@ -4,13 +4,16 @@ import Prelude hiding (String)
 import SocialLink 
 import Characters.Kazushi
 
+rank3 :: Rank3
+rank3 = Rank3 (Say [Only (String "Are you sure you're okay?"),
+                    Only (String "Will it heal?")])
+
 chariot :: SocialLink
-chariot = SocialLink (Ranks (Rank1 (Event (Automatic Nothing)))
+chariot = SocialLink (Ranks (Rank1 (Event (Date Nothing)))
                             (Rank2 (Say [Only (String "Toughen up"),
                                          Anything,
                                          Anything]))
-                            (Rank3 (Say [Only (String "Are you sure you're okay?"),
-                                         Only (String "Will it heal?")]))
+                            rank3
                             (Rank4 (Say [Anything,
                                          Only (String "That sucks")]))
                             (Rank5 (Say [Only (String "The hospital again?"),
@@ -22,4 +25,4 @@ chariot = SocialLink (Ranks (Rank1 (Event (Automatic Nothing)))
                                          Only (String "You need to toughen up")]))
                             (Rank8 LookAway)
                             (Rank9 (Say [Only (String "I'm fine")]))
-                            (Rank10 (Event (Automatic Nothing)))) (String "Chariot") $ Right [kazushi]
+                            (Rank10 (Event (Date Nothing)))) (String "Chariot") $ Right [kazushi]

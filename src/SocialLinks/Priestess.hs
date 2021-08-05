@@ -5,7 +5,7 @@ import Characters.Fuuka
 import SocialLink
 
 priestess :: SocialLink
-priestess = SocialLink (Ranks (Rank1 (Event (Automatic Nothing)))
+priestess = SocialLink (Ranks (Rank1 (Event (Date Nothing)))
                               (Rank2 (Say [Only (String "Sure")]))
                               (Rank3 (Say [Only (String "I believe in you"), Anything]))
                               (Rank4 (Say [Anything, Only (String "Oh, I don't think so")]))
@@ -14,4 +14,4 @@ priestess = SocialLink (Ranks (Rank1 (Event (Automatic Nothing)))
                               (Rank7 (Say [Anything, Anything]))
                               (Rank8 (Say [Anything, Only (String "I want to be with you too")]))
                               (Rank9 (Say [Anything, Anything]))
-                              (Rank10 (Event (Automatic Nothing)))) (String "Priestess") $ Right [fuuka]
+                              (Rank10 (Event (Date Nothing)))) (String "Priestess") $ Right [fuuka]

@@ -11,17 +11,16 @@ instance Show String where
 instance Eq String where
   (String a) == (String b) = a == b
 
-data Rank1 = Rank1 Rank' deriving (Show)
-data Rank2 = Rank2 Rank' deriving (Show)
-data Rank3 = Rank3 Rank' deriving (Show)
-data Rank4 = Rank4 Rank' deriving (Show)
-data Rank5 = Rank5 Rank' deriving (Show)
-data Rank6 = Rank6 Rank' deriving (Show)
-data Rank7 = Rank7 Rank' deriving (Show)
-data Rank8 = Rank8 Rank' deriving (Show)
-data Rank9 = Rank9 Rank' deriving (Show)
-data Rank10 = Rank10 Rank' deriving (Show)
-type Rank' = Trigger
+data Rank1 = Rank1 Trigger deriving (Show)
+data Rank2 = Rank2 Trigger deriving (Show)
+data Rank3 = Rank3 Trigger deriving (Show)
+data Rank4 = Rank4 Trigger deriving (Show)
+data Rank5 = Rank5 Trigger deriving (Show)
+data Rank6 = Rank6 Trigger deriving (Show)
+data Rank7 = Rank7 Trigger deriving (Show)
+data Rank8 = Rank8 Trigger deriving (Show)
+data Rank9 = Rank9 Trigger deriving (Show)
+data Rank10 = Rank10 Trigger deriving (Show)
 data RankReference = ReferRank1 Rank1 | 
                      ReferRank2 Rank2 |
                      ReferRank3 Rank3 |
@@ -39,8 +38,8 @@ data Message = Anything |
                Only String 
                  deriving (Show)
 type Lines = [Message]
-data Event' = Automatic (Maybe Date) | 
-              After String
+data Event' = Date (Maybe (Int, Int)) |
+              SocialLinkReference SocialLink RankReference 
                 deriving (Show)
 data Trigger = Event Event' | 
                Skip RankReference | 
@@ -49,12 +48,10 @@ data Trigger = Event Event' |
                Confront Character |
                LookAway
                  deriving (Show)
-data Date = Date Int Int deriving Show
 type Host = Either Group Characters 
 type Arcana = String
 data SocialLink = SocialLink Ranks Arcana Host deriving (Show)
 type SocialLinks = [SocialLink]
-
 data Group = Group String [Character] deriving (Show)
 type Groups = [Group]
 

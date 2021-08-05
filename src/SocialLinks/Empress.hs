@@ -5,7 +5,7 @@ import SocialLink
 import Characters.Mitsuru 
 
 empress :: SocialLink
-empress = SocialLink (Ranks (Rank1 (Event (Automatic Nothing)))
+empress = SocialLink (Ranks (Rank1 (Event (Date Nothing)))
                             (Rank2 (Say [Anything]))
                             (Rank3 (Say [Only (String "Ask her to treat you"),
                                          Only (String "Does that make you happy"),
@@ -26,4 +26,4 @@ empress = SocialLink (Ranks (Rank1 (Event (Automatic Nothing)))
                                          Only (String "Say something to the guy"), 
                                          Anything]))
                             (Rank9 (Say [Only (String "That makes me happy")]))
-                            (Rank10 (Event (Automatic Nothing)))) (String "Empress") $ Right [mitsuru]
+                            (Rank10 (Event (Date Nothing)))) (String "Empress") $ Right [mitsuru]

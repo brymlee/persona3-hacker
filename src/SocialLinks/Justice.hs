@@ -5,7 +5,7 @@ import SocialLink
 import Characters.Chihiro
 
 justice :: SocialLink
-justice = SocialLink (Ranks (Rank1 (Event (Automatic Nothing)))
+justice = SocialLink (Ranks (Rank1 (Event (Date Nothing)))
                             (Rank2 (Say [Only (String "Don't worry about it"),
                                          ChooseOne [String "I read the classics",
                                                     String "I read manga"],
@@ -28,4 +28,4 @@ justice = SocialLink (Ranks (Rank1 (Event (Automatic Nothing)))
                                          Only (String "Wait to see what happens"),
                                          Anything,
                                          Only (String "What's wrong")]))
-                            (Rank10 (Event (Automatic Nothing)))) (String "Justice") $ Right [chihiro]
+                            (Rank10 (Event (Date Nothing)))) (String "Justice") $ Right [chihiro]
