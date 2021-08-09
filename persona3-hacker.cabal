@@ -59,6 +59,7 @@ executable persona3-hacker
       Characters.Mamoru,
       Characters.Nozomi,
       Characters.Akinari,
+      Characters.Aigis,
       Enemies.Nyx,
       Enemies.CarnalSnake,
       Enemies.FierceCyclops,
@@ -87,6 +88,7 @@ executable persona3-hacker
       SocialLinks.Moon,
       SocialLinks.Sun,
       SocialLinks.Judgement,
+      SocialLinks.Aeon,
       SocialLink,
       Sees
     default-language: Haskell2010

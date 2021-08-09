@@ -1,7 +1,5 @@
 module Main where
 
-import Prelude hiding (String)
-import qualified Data.String as S
 import Control.Monad.State 
 import Sees 
 import Characters.Hidetoshi 
@@ -25,6 +23,7 @@ import Characters.Mutatsu
 import Characters.Mamoru
 import Characters.Nozomi
 import Characters.Akinari
+import Characters.Aigis
 import Enemies.Nyx
 import Enemies.CarnalSnake
 import Enemies.FierceCyclops
@@ -52,7 +51,10 @@ import SocialLinks.Star
 import SocialLinks.Moon
 import SocialLinks.Sun
 import SocialLinks.Judgement
-import SocialLink 
+import SocialLinks.Aeon
+import SocialLink hiding (String)
+import System.Environment
+import System.IO
 
 type Value = (SocialLinks, Groups, Characters, Enemies)
 type State' = State Value Value
@@ -87,7 +89,8 @@ characters = [mitsuru,
               mamoru,
               nozomi,
               akinari, 
-              (toCharacter nyx)]
+              (toCharacter nyx),
+              aigis]
 
 groups :: Groups
 groups = [sees]
@@ -112,14 +115,49 @@ socialLinks = [fool,
                star,
                moon,
                sun,
-               judgement]
+               judgement,
+               aeon]
 
-getValue :: State'
-getValue = do
-  put (socialLinks, groups, characters, enemies)
-  result <- get
-  return result
+parse :: String -> String
+parse [] = ""
+parse [x] = parse []
+parse xs = parseOpen (tail xs) $ head xs
 
-main :: IO()
+parseOpen :: String -> Char -> String
+parseOpen [] _ = parse []
+parseOpen xs '{' = parseKey (tail xs) $ head xs
+parseOpen _xs _ = parse []
+
+parseKey :: String -> Char -> String
+parseKey [] _ = parse []
+parseKey xs ' ' =  parseKey (tail xs) $ head xs
+parseKey xs '\"' = parseKey' xs $ take 10 xs
+parseKey _xs _ = parse []
+
+parseKey' :: String -> String -> String
+parseKey' [] _ = parse []
+parseKey' xs "characters" = parseCharacters xs
+parseKey' _xs _ = parse []
+
+parseCharacters :: String -> String
+parseCharacters [] = parse []
+parseCharacters xs = parseCharacters' $ drop 10 xs 
+
+parseCharacters' :: String -> String
+parseCharacters' [] = parse []
+parseCharacters' xs = parseCharacters'' (tail xs) $ head xs
+
+parseCharacters'' [] _ = parse []
+parseCharacters'' xs '\"' = show characters
+parseCharacters'' _xs _ = parse []
+
 main = do
-  putStrLn $ show $ evalState getValue $ ([], [], [], [])
+  args <- getArgs
+  putStrLn $ parse $ head args
+
+--getValue :: State'
+--getValue = do
+--put (socialLinks, groups, characters, enemies)
+--result <- get
+--return result
+--let r = evalState getValue $ ([], [], [], [])
