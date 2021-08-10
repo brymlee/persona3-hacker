@@ -55,6 +55,10 @@ import SocialLinks.Aeon
 import SocialLink hiding (String)
 import System.Environment
 import System.IO
+import qualified Data.Text as Text
+import qualified Data.Text.Encoding as TextEncoding
+import qualified Data.ByteString as ByteString
+import qualified Data.ByteString.Base64 as Base64
 
 type Value = (SocialLinks, Groups, Characters, Enemies)
 type State' = State Value Value
@@ -118,42 +122,46 @@ socialLinks = [fool,
                judgement,
                aeon]
 
-parse :: String -> String
-parse [] = ""
-parse [x] = parse []
-parse xs = parseOpen (tail xs) $ head xs
+parse :: Either Text.Text ByteString.ByteString -> String
+parse (Left text) = parse' $ Text.unpack text
+parse (Right byteString) = parse' $ Text.unpack $ TextEncoding.decodeUtf8 byteString
+
+parse' :: String -> String
+parse' [] = ""
+parse' [x] = parse' []
+parse' xs = parseOpen (tail xs) $ head xs
 
 parseOpen :: String -> Char -> String
-parseOpen [] _ = parse []
+parseOpen [] _ = parse' []
 parseOpen xs '{' = parseKey (tail xs) $ head xs
-parseOpen _xs _ = parse []
+parseOpen _xs _ = parse' []
 
 parseKey :: String -> Char -> String
-parseKey [] _ = parse []
+parseKey [] _ = parse' []
 parseKey xs ' ' =  parseKey (tail xs) $ head xs
 parseKey xs '\"' = parseKey' xs $ take 10 xs
-parseKey _xs _ = parse []
+parseKey _xs _ = parse' []
 
 parseKey' :: String -> String -> String
-parseKey' [] _ = parse []
+parseKey' [] _ = parse' []
 parseKey' xs "characters" = parseCharacters xs
-parseKey' _xs _ = parse []
+parseKey' _xs _ = parse' []
 
 parseCharacters :: String -> String
-parseCharacters [] = parse []
+parseCharacters [] = parse' []
 parseCharacters xs = parseCharacters' $ drop 10 xs 
 
 parseCharacters' :: String -> String
-parseCharacters' [] = parse []
+parseCharacters' [] = parse' []
 parseCharacters' xs = parseCharacters'' (tail xs) $ head xs
 
-parseCharacters'' [] _ = parse []
+parseCharacters'' [] _ = parse' []
 parseCharacters'' xs '\"' = show characters
-parseCharacters'' _xs _ = parse []
+parseCharacters'' _xs _ = parse' []
 
 main = do
   args <- getArgs
-  putStrLn $ parse $ head args
+  putStrLn $ parse $ Base64.decodeBase64 $ TextEncoding.encodeUtf8 $ Text.pack $ head args
 
 --getValue :: State'
 --getValue = do
