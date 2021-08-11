@@ -1,4 +1,4 @@
-FROM docker.io/haskell:latest
+FROM docker.io/haskell:8.8.4
 RUN stack update
 RUN stack setup
 RUN mkdir persona3-hacker
