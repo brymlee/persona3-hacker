@@ -10,5 +10,6 @@ RUN mkdir src
 COPY src/Tartarus.purs src/Tartarus.purs
 COPY src/SocialLink.purs src/SocialLink.purs
 COPY src/Characters src/Characters
+COPY src/Enemies src/Enemies
 RUN spago build
 CMD ["/bin/bash"]
