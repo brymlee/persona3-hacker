@@ -1,7 +1,7 @@
 module Characters.Ryoji where
 
-import Prelude hiding (String)
-import SocialLink 
+import Prim hiding (String)
+import SocialLink (Character(..), String(..))
 
 ryoji :: Character
 ryoji = Character [String "Ryoji",

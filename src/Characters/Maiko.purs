@@ -1,7 +1,7 @@
 module Characters.Maiko where
 
-import Prelude hiding (String)
-import SocialLink
+import Prim hiding (String)
+import SocialLink (Character(..), String(..))
 
 maiko :: Character
 maiko = Character [String "Maiko",

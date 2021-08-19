@@ -1,7 +1,7 @@
 module Characters.Akinari where
 
-import Prelude hiding (String)
-import SocialLink 
+import Prim hiding (String)
+import SocialLink (Character(..), String(..))
 
 akinari :: Character
 akinari = Character [String "Akinari",

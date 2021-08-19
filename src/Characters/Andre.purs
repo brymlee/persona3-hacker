@@ -1,7 +1,7 @@
 module Characters.Andre where
 
-import Prelude hiding (String)
-import SocialLink 
+import Prim hiding (String)
+import SocialLink (Character(..), String(..))
 
 andre :: Character
 andre = Character [String "Andre",

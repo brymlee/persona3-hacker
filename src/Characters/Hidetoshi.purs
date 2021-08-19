@@ -1,7 +1,7 @@
 module Characters.Hidetoshi where
 
-import Prelude hiding (String)
-import SocialLink
+import Prim hiding (String)
+import SocialLink (Character(..), String(..))
 
 hidetoshi :: Character
 hidetoshi = Character [String "Hidetoshi",

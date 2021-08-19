@@ -1,7 +1,7 @@
 module Characters.Chihiro where
 
-import Prelude hiding (String)
-import SocialLink 
+import Prim hiding (String)
+import SocialLink (Character(..), String(..))
 
 chihiro :: Character
 chihiro = Character [String "Chihiro",

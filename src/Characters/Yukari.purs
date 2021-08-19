@@ -1,7 +1,7 @@
 module Characters.Yukari where
 
-import Prelude hiding (String)
-import SocialLink
+import Prim hiding (String)
+import SocialLink (Character(..), String(..))
 
 yukari :: Character
 yukari = Character [String "Yukari",

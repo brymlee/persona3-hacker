@@ -1,7 +1,7 @@
 module Characters.Mitsuko where
 
-import Prelude hiding (String)
-import SocialLink
+import Prim hiding (String)
+import SocialLink (Character(..), String(..))
 
 mitsuko :: Character
 mitsuko = Character [String "Mitsuko",

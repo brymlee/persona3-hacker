@@ -1,7 +1,7 @@
 module Characters.Nozomi where
 
-import Prelude hiding (String)
-import SocialLink 
+import Prim hiding (String)
+import SocialLink (Character(..), String(..))
 
 nozomi :: Character
 nozomi = Character [String "Nozomi",

@@ -1,7 +1,7 @@
 module Characters.Fuuka where
 
-import Prelude hiding (String)
-import SocialLink 
+import Prim hiding (String)
+import SocialLink (Character(..), String(..))
 
 fuuka :: Character
 fuuka = Character [String "Fuuka",

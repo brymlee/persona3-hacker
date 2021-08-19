@@ -9,5 +9,6 @@ RUN spago install
 RUN mkdir src
 COPY src/Tartarus.purs src/Tartarus.purs
 COPY src/SocialLink.purs src/SocialLink.purs
+COPY src/Characters src/Characters
 RUN spago build
 CMD ["/bin/bash"]

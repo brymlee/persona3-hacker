@@ -1,6 +1,7 @@
 module Characters.Emiri where
 
-import SocialLink
+import Prim hiding (String)
+import SocialLink (Character(..), String(..))
 
 emiri :: Character
 emiri = Character [String "Emiri",

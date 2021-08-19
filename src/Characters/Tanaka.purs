@@ -1,7 +1,7 @@
 module Characters.Tanaka where
 
-import Prelude hiding (String)
-import SocialLink 
+import Prim hiding (String)
+import SocialLink (Character(..), String(..))
 
 tanaka :: Character
 tanaka = Character [String "Tanaka"]
