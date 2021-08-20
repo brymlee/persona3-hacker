@@ -6,7 +6,6 @@ WORKDIR persona3-hacker
 COPY packages.dhall packages.dhall
 COPY spago.dhall spago.dhall
 RUN spago install
-RUN mkdir src
 COPY src src
 RUN spago build
 CMD ["spago", "run", "--main", "Main"]
