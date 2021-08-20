@@ -1,8 +1,7 @@
-module Characters.Nozomi where
+module Characters.Nozomi (nozomi) where
 
-import Prim hiding (String)
-import SocialLink (Character(..), String(..))
+import SocialLink (Character(..))
 
 nozomi :: Character
-nozomi = Character [String "Nozomi",
-                    String "Suemitsu"]
+nozomi = Character ["Nozomi",
+                    "Suemitsu"]

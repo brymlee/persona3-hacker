@@ -1,8 +1,7 @@
-module Characters.Kenji where
+module Characters.Kenji (kenji) where
 
-import Prim hiding (String)
-import SocialLink (Character(..), String(..))
+import SocialLink (Character(..))
 
 kenji :: Character
-kenji = Character [String "Kenji",
-                   String "Tomochika"]
+kenji = Character ["Kenji",
+                   "Tomochika"]

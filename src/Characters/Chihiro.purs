@@ -1,8 +1,7 @@
-module Characters.Chihiro where
+module Characters.Chihiro (chihiro) where
 
-import Prim hiding (String)
-import SocialLink (Character(..), String(..))
+import SocialLink (Character(..))
 
 chihiro :: Character
-chihiro = Character [String "Chihiro",
-                     String "Fushimi"]
+chihiro = Character ["Chihiro",
+                     "Fushimi"]

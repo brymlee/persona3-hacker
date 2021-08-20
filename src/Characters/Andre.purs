@@ -1,10 +1,9 @@
-module Characters.Andre where
+module Characters.Andre (andre) where
 
-import Prim hiding (String)
-import SocialLink (Character(..), String(..))
+import SocialLink (Character(..))
 
 andre :: Character
-andre = Character [String "Andre",
-                   String "Roland",
-                   String "Jean",
-                   String "Gérard"] 
+andre = Character ["Andre",
+                   "Roland",
+                   "Jean",
+                   "Gérard"] 

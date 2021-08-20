@@ -1,10 +1,9 @@
-module Enemies.JotunOfGrief where
+module Enemies.JotunOfGrief (jotunOfGrief) where
 
-import Prim hiding (String)
-import SocialLink (Enemy(..), Character(..), String(..))
+import SocialLink (Enemy(..), Character(..))
 import Data.Function as F
 
 infixr 0 F.apply as $
 
 jotunOfGrief :: Enemy
-jotunOfGrief = Enemy $ Character [String "Jotun Of Grief"]
+jotunOfGrief = Enemy $ Character ["Jotun Of Grief"]

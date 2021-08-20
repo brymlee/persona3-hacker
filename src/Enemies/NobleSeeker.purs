@@ -1,10 +1,9 @@
-module Enemies.NobleSeeker where
+module Enemies.NobleSeeker (nobleSeeker) where
 
-import Prim hiding (String)
-import SocialLink (Enemy(..), Character(..), String(..))
+import SocialLink (Enemy(..), Character(..))
 import Data.Function as F
 
 infixr 0 F.apply as $
 
 nobleSeeker :: Enemy
-nobleSeeker = Enemy $ Character [String "Noble Seeker"]
+nobleSeeker = Enemy $ Character ["Noble Seeker"]

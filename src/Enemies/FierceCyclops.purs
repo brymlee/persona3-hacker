@@ -1,10 +1,9 @@
-module Enemies.FierceCyclops where
+module Enemies.FierceCyclops (fierceCyclops) where
 
-import Prim hiding (String)
-import SocialLink (Enemy(..), Character(..), String(..))
+import SocialLink (Enemy(..), Character(..))
 import Data.Function as F
 
 infixr 0 F.apply as $
 
 fierceCyclops :: Enemy
-fierceCyclops = Enemy $ Character [String "Fierce Cyclops"]
+fierceCyclops = Enemy $ Character ["Fierce Cyclops"]

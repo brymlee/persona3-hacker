@@ -1,8 +1,7 @@
-module Characters.Hidetoshi where
+module Characters.Hidetoshi (hidetoshi) where
 
-import Prim hiding (String)
-import SocialLink (Character(..), String(..))
+import SocialLink (Character(..))
 
 hidetoshi :: Character
-hidetoshi = Character [String "Hidetoshi",
-                       String "Odagiri"]
+hidetoshi = Character ["Hidetoshi",
+                       "Odagiri"]

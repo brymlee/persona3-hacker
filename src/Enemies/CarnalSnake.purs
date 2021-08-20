@@ -1,10 +1,6 @@
-module Enemies.CarnalSnake where
+module Enemies.CarnalSnake (carnalSnake) where
 
-import Prim hiding (String)
-import SocialLink (Enemy(..), Character(..), String(..))
-import Data.Function as F
-
-infixr 0 F.apply as $
+import SocialLink (Enemy(..), Character(..), ($))
 
 carnalSnake :: Enemy
-carnalSnake = Enemy $ Character [String "Carnal Snake"]
+carnalSnake = Enemy $ Character ["Carnal Snake"]

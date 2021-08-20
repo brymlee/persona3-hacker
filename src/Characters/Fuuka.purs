@@ -1,8 +1,7 @@
-module Characters.Fuuka where
+module Characters.Fuuka (fuuka) where
 
-import Prim hiding (String)
-import SocialLink (Character(..), String(..))
+import SocialLink (Character(..))
 
 fuuka :: Character
-fuuka = Character [String "Fuuka",
-                   String "Yamagishi"]
+fuuka = Character ["Fuuka",
+                   "Yamagishi"]

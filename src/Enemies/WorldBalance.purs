@@ -1,10 +1,9 @@
-module Enemies.WorldBalance where
+module Enemies.WorldBalance (worldBalance) where
 
-import Prim hiding (String)
-import SocialLink (Enemy(..), Character(..), String(..))
+import SocialLink (Enemy(..), Character(..))
 import Data.Function as F
 
 infixr 0 F.apply as $
 
 worldBalance :: Enemy
-worldBalance = Enemy $ Character [String "World Balance"]
+worldBalance = Enemy $ Character ["World Balance"]

@@ -1,8 +1,7 @@
-module Characters.Ryoji where
+module Characters.Ryoji (ryoji) where
 
-import Prim hiding (String)
-import SocialLink (Character(..), String(..))
+import SocialLink (Character(..))
 
 ryoji :: Character
-ryoji = Character [String "Ryoji",
-                   String "Mochizuki"]
+ryoji = Character ["Ryoji",
+                   "Mochizuki"]

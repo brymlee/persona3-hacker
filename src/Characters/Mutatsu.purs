@@ -1,7 +1,6 @@
-module Characters.Mutatsu where
+module Characters.Mutatsu (mutatsu) where
 
-import Prim hiding (String)
-import SocialLink (Character(..), String(..))
+import SocialLink (Character(..))
 
 mutatsu :: Character
-mutatsu = Character [String "Mutatsu"]
+mutatsu = Character ["Mutatsu"]

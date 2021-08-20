@@ -1,8 +1,7 @@
-module Characters.Keisuke where
+module Characters.Keisuke (keisuke) where
 
-import Prim hiding (String)
-import SocialLink (Character(..), String(..))
+import SocialLink (Character(..))
 
 keisuke :: Character
-keisuke = Character [String "Keisuke",
-                     String "Hiraga"]
+keisuke = Character ["Keisuke",
+                     "Hiraga"]

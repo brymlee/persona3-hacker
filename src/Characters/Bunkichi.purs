@@ -1,8 +1,7 @@
-module Characters.Bunkichi where
+module Characters.Bunkichi (bunkichi) where
 
-import Prim hiding (String)
-import SocialLink (Character(..), String(..))
+import SocialLink (Character(..))
 
 bunkichi :: Character
-bunkichi = Character [String "Bunkichi",
-                      String "Kitamura"]
+bunkichi = Character ["Bunkichi",
+                      "Kitamura"]

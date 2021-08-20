@@ -1,8 +1,7 @@
-module Characters.Emiri where
+module Characters.Emiri (emiri) where
 
-import Prim hiding (String)
-import SocialLink (Character(..), String(..))
+import SocialLink (Character(..))
 
 emiri :: Character
-emiri = Character [String "Emiri",
-                   String "Kanou"]
+emiri = Character ["Emiri",
+                   "Kanou"]

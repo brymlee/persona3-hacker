@@ -7,9 +7,6 @@ COPY packages.dhall packages.dhall
 COPY spago.dhall spago.dhall
 RUN spago install
 RUN mkdir src
-COPY src/Tartarus.purs src/Tartarus.purs
-COPY src/SocialLink.purs src/SocialLink.purs
-COPY src/Characters src/Characters
-COPY src/Enemies src/Enemies
+COPY src src
 RUN spago build
-CMD ["/bin/bash"]
+CMD ["spago", "run", "--main", "Main"]

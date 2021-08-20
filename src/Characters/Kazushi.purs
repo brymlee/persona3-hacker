@@ -1,8 +1,7 @@
-module Characters.Kazushi where
+module Characters.Kazushi (kazushi) where
 
-import Prim hiding (String)
-import SocialLink (Character(..), String(..))
+import SocialLink (Character(..))
 
 kazushi :: Character
-kazushi = Character [String "Kazushi",
-                     String "Miyamoto"]
+kazushi = Character ["Kazushi",
+                     "Miyamoto"]

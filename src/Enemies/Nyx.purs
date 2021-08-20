@@ -1,10 +1,9 @@
-module Enemies.Nyx where
+module Enemies.Nyx (nyx) where
 
-import Prim hiding (String)
-import SocialLink (Enemy(..), Character(..), String(..))
+import SocialLink (Enemy(..), Character(..))
 import Data.Function as F
 
 infixr 0 F.apply as $
 
 nyx :: Enemy
-nyx = Enemy $ Character [String "Nyx"]
+nyx = Enemy $ Character ["Nyx"]

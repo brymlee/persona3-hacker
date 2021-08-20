@@ -1,7 +1,6 @@
-module Characters.Tanaka where
+module Characters.Tanaka (tanaka) where
 
-import Prim hiding (String)
-import SocialLink (Character(..), String(..))
+import SocialLink (Character(..))
 
 tanaka :: Character
-tanaka = Character [String "Tanaka"]
+tanaka = Character ["Tanaka"]

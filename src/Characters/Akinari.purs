@@ -1,8 +1,7 @@
-module Characters.Akinari where
+module Characters.Akinari (akinari) where
 
-import Prim hiding (String)
-import SocialLink (Character(..), String(..))
+import SocialLink (Character(..))
 
 akinari :: Character
-akinari = Character [String "Akinari",
-                     String "Kamiki"]
+akinari = Character ["Akinari",
+                     "Kamiki"]

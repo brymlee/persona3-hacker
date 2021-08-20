@@ -1,8 +1,7 @@
-module Characters.Maya where
+module Characters.Maya (maya) where
 
-import Prim hiding (String)
-import SocialLink (Character(..), String(..))
+import SocialLink (Character(..))
 
 maya :: Character
-maya = Character [String "Maya",
-                  String "Toriumi"]
+maya = Character ["Maya",
+                  "Toriumi"]

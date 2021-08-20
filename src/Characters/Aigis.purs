@@ -1,7 +1,6 @@
-module Characters.Aigis where
+module Characters.Aigis (aigis) where
 
-import Prim hiding (String)
-import SocialLink (Character(..), String(..))
+import SocialLink (Character(..))
 
 aigis :: Character
-aigis = Character [String "Aigis"]
+aigis = Character ["Aigis"]

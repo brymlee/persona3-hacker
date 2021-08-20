@@ -1,8 +1,7 @@
-module Characters.Yukari where
+module Characters.Yukari (yukari) where
 
-import Prim hiding (String)
-import SocialLink (Character(..), String(..))
+import SocialLink (Character(..))
 
 yukari :: Character
-yukari = Character [String "Yukari",
-                    String "Takeba"]
+yukari = Character ["Yukari",
+                    "Takeba"]

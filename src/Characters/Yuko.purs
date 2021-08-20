@@ -1,8 +1,7 @@
-module Characters.Yuko where
+module Characters.Yuko (yuko) where
 
-import Prim hiding (String)
-import SocialLink (Character(..), String(..))
+import SocialLink (Character(..))
 
 yuko :: Character
-yuko = Character [String "Yuko",
-                  String "Nishiwaki"]
+yuko = Character ["Yuko",
+                  "Nishiwaki"]
