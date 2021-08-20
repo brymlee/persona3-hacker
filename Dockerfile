@@ -1,10 +1,12 @@
-FROM docker.io/haskell:8.8.4
-RUN stack update
-RUN stack setup
+FROM docker.io/archlinux:latest
+RUN pacman -Syu nodejs npm git --noconfirm
+RUN npm i -g purescript spago
 RUN mkdir persona3-hacker
 WORKDIR persona3-hacker
-COPY persona3-hacker.cabal persona3-hacker.cabal
-RUN stack init
+COPY packages.dhall packages.dhall
+COPY spago.dhall spago.dhall
+RUN spago install
+RUN mkdir src
 COPY src src
-RUN stack build
-CMD ["stack", "run", "--", "eyAiY2hhcmFjdGVycyI6IFtdIH0="]
+RUN spago build
+CMD ["spago", "run", "--main", "Main"]
