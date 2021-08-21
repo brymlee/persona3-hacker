@@ -8,4 +8,5 @@ COPY spago.dhall spago.dhall
 RUN spago install
 COPY src src
 RUN spago build
-CMD ["spago", "run", "--main", "Main"]
+RUN spago bundle-app
+CMD ["node", "index.js"]
