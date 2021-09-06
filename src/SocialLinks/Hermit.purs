@@ -15,10 +15,10 @@ import SocialLink (Event'(..),
                    SocialLink(..),
                    Ranks(..),
                    Host(..), 
-                   ($), 
                    Message(..))
 import Characters.Maya (maya)
 import Data.Maybe (Maybe(..))
+import Data.Function (($))
 
 hermit :: SocialLink
 hermit = SocialLink (Ranks (Rank1 (Event (Date Nothing)))

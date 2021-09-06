@@ -15,10 +15,10 @@ import SocialLink (Event'(..),
                    SocialLink(..),
                    Ranks(..),
                    Host(..), 
-                   ($), 
                    Message(..))
 import Characters.Maiko (maiko)
 import Data.Maybe (Maybe(..))
+import Data.Function (($))
 
 hangedMan :: SocialLink
 hangedMan = SocialLink (Ranks (Rank1 (Event (Date Nothing)))

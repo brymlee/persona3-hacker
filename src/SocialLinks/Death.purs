@@ -14,12 +14,11 @@ import SocialLink (Event'(..),
                    Trigger(..),
                    SocialLink(..),
                    Ranks(..),
-                   Host(..), 
-                   ($))
-                   
+                   Host(..))
 import Characters.Ryoji (ryoji)
 import Data.Maybe (Maybe(..))
 import Data.Tuple (Tuple(..))
+import Data.Function (($))
 
 death :: SocialLink
 death = SocialLink (Ranks (Rank1 (Event (Date (Just (Tuple 6 12)))))

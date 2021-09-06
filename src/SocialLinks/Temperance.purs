@@ -15,10 +15,10 @@ import SocialLink (Event'(..),
                    SocialLink(..),
                    Ranks(..),
                    Host(..), 
-                   ($), 
                    Message(..))
 import Data.Maybe (Maybe(..))
 import Characters.Andre (andre)
+import Data.Function (($))
 
 temperance :: SocialLink
 temperance = SocialLink (Ranks (Rank1 (Event (Date Nothing)))

@@ -13,9 +13,9 @@ import SocialLink (Rank1(..),
                    Trigger(..),
                    SocialLink(..),
                    Ranks(..),
-                   Host(..), 
-                   ($)) 
+                   Host(..))
 import Characters.Tanaka (tanaka)
+import Data.Function (($))
 
 devil :: SocialLink 
 devil = SocialLink (Ranks (Rank1 result)

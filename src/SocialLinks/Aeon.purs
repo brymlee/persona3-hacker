@@ -15,10 +15,10 @@ import SocialLink (Event'(..),
                    SocialLink(..),
                    Ranks(..),
                    Host(..), 
-                   ($), 
                    Message(..))
 import Characters.Aigis (aigis)
 import Data.Maybe (Maybe(..))
+import Data.Function (($))
 
 aeon :: SocialLink
 aeon = SocialLink (Ranks (Rank1 (Event (Date Nothing)))

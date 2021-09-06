@@ -15,11 +15,11 @@ import SocialLink (Event'(..),
                    SocialLink(..),
                    Ranks(..),
                    Host(..), 
-                   ($), 
                    RankReference(..))
 import Sees (sees)
 import Data.Maybe (Maybe(..))
 import Data.Tuple (Tuple(..))
+import Data.Function (($))
 
 fool :: SocialLink
 fool = SocialLink (Ranks (Rank1 (Event (Date (Just (Tuple 4 18)))))

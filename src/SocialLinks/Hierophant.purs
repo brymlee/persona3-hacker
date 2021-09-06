@@ -15,11 +15,11 @@ import SocialLink (Event'(..),
                    SocialLink(..),
                    Ranks(..),
                    Host(..), 
-                   ($), 
                    Message(..))
 import Characters.Mitsuko (mitsuko)
 import Characters.Bunkichi (bunkichi)
 import Data.Maybe (Maybe(..))
+import Data.Function (($))
 
 hierophant :: SocialLink
 hierophant = SocialLink (Ranks (Rank1 (Event (Date Nothing)))

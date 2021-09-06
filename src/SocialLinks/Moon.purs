@@ -15,10 +15,10 @@ import SocialLink (Event'(..),
                    SocialLink(..),
                    Ranks(..),
                    Host(..), 
-                   ($), 
                    Message(..))
 import Data.Maybe (Maybe(..))
 import Characters.Nozomi (nozomi)
+import Data.Function (($))
 
 moon :: SocialLink
 moon = SocialLink (Ranks (Rank1 (Event (Date Nothing)))

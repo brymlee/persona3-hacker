@@ -15,10 +15,10 @@ import SocialLink (Event'(..),
                    SocialLink(..),
                    Ranks(..),
                    Host(..), 
-                   ($), 
                    Message(..))
 import Data.Maybe (Maybe(..))
 import Characters.Chihiro
+import Data.Function (($))
 
 justice :: SocialLink
 justice = SocialLink (Ranks (Rank1 (Event (Date Nothing)))

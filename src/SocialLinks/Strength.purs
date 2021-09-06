@@ -15,12 +15,12 @@ import SocialLink (Event'(..),
                    SocialLink(..),
                    Ranks(..),
                    Host(..), 
-                   ($), 
                    Message(..),
                    RankReference(..))
 import Data.Maybe (Maybe(..))
 import Characters.Yuko (yuko)
 import SocialLinks.Chariot as Chariot
+import Data.Function (($))
 
 chariotSocialLink :: SocialLink
 chariotSocialLink = Chariot.chariot

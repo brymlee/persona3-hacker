@@ -13,9 +13,9 @@ import SocialLink (Rank1(..),
                    Trigger(..),
                    SocialLink(..),
                    Ranks(..),
-                   Host(..), 
-                   ($))
+                   Host(..))
 import Characters.Akinari (akinari)
+import Data.Function (($))
 
 sun :: SocialLink
 sun = SocialLink (Ranks (Rank1 result)

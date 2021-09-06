@@ -15,10 +15,10 @@ import SocialLink (Event'(..),
                    SocialLink(..),
                    Ranks(..),
                    Host(..), 
-                   ($), 
                    Message(..))
 import Characters.Hidetoshi (hidetoshi)
 import Data.Maybe (Maybe(..))
+import Data.Function (($))
 
 emperor :: SocialLink
 emperor = SocialLink (Ranks (Rank1 (Event (Date Nothing)))

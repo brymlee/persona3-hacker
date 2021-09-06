@@ -1,5 +1,4 @@
-module SocialLink (($), 
-                   Rank1(..), 
+module SocialLink (Rank1(..),  
                    Rank2(..),
                    Rank3(..),
                    Rank4(..),
@@ -33,12 +32,10 @@ import Data.Show (class Show, show)
 import Tartarus (Floor)
 import Data.Maybe (Maybe(..))
 import Data.Eq 
-import Data.Function as F 
 import Data.Array (concat, filter, head)
 import Data.Tuple (Tuple)
 import Data.String (joinWith)
-
-infixr 0 F.apply as $
+import Data.Function (($))
 
 data Rank1 = Rank1 Trigger 
 derive instance eqRank1 :: Eq Rank1

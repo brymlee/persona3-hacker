@@ -15,12 +15,12 @@ import SocialLink (Event'(..),
                    SocialLink(..),
                    Ranks(..),
                    Host(..), 
-                   ($), 
                    Message(..))
 import Data.Maybe (Maybe(..))
 import Characters.Kenji (kenji)
 import Characters.Emiri (emiri)
 import Data.Tuple (Tuple(..))
+import Data.Function (($))
 
 magician :: SocialLink
 magician = SocialLink (Ranks (Rank1 (Event (Date (Just (Tuple 4 22)))))

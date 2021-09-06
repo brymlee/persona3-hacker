@@ -14,9 +14,7 @@ import SocialLink (Event'(..),
                    Trigger(..),
                    SocialLink(..),
                    Ranks(..),
-                   Host(..), 
-                   ($))
-                   
+                   Host(..))
 import Data.Maybe (Maybe(..))
 import Tartarus (Floor(..))
 import Enemies.Nyx (nyx)
@@ -25,6 +23,7 @@ import Enemies.CarnalSnake (carnalSnake)
 import Enemies.WorldBalance (worldBalance)
 import Enemies.FierceCyclops (fierceCyclops)
 import Enemies.JotunOfGrief (jotunOfGrief)
+import Data.Function (($))
 
 judgement :: SocialLink
 judgement = SocialLink (Ranks (Rank1 (Event (Date Nothing)))

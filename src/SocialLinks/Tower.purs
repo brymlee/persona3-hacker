@@ -15,10 +15,10 @@ import SocialLink (Event'(..),
                    SocialLink(..),
                    Ranks(..),
                    Host(..), 
-                   ($), 
                    Message(..))
 import Data.Maybe (Maybe(..))
 import Characters.Mutatsu (mutatsu)
+import Data.Function (($))
 
 tower :: SocialLink 
 tower = SocialLink (Ranks (Rank1 (Event (Date Nothing)))

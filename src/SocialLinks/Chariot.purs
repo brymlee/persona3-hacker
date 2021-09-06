@@ -15,10 +15,10 @@ import SocialLink (Event'(..),
                    SocialLink(..),
                    Ranks(..),
                    Host(..), 
-                   ($), 
                    Message(..))
 import Characters.Kazushi (kazushi)
 import Data.Maybe (Maybe(..))
+import Data.Function (($))
 
 rank3 :: Rank3
 rank3 = Rank3 (Say [Only "Are you sure you're okay?",

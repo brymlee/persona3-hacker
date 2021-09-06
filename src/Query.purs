@@ -1,4 +1,4 @@
-module Query (query, socialLinks, groups, characters, enemies, Query(..)) where
+module Query (query, socialLinks, groups, characters, enemies, Query(..), tail) where
 
 import Sees (sees)
 import Characters.Hidetoshi (hidetoshi) 
@@ -53,12 +53,13 @@ import SocialLinks.Judgement (judgement)
 import SocialLinks.Aeon (aeon)
 import Data.Array (concat, length, head)
 import Data.Array as A
-import SocialLink (($), Enemies, Groups, Characters, SocialLinks, toCharacter)
+import SocialLink (Enemies, Groups, Characters, SocialLinks, toCharacter)
 import Data.Show (class Show, show)
 import Data.Maybe (Maybe(..))
 import Data.Eq ((==))
 import Data.Ord ((<=))
 import Data.Boolean (otherwise)
+import Data.Function (($))
 
 tail :: forall a. Array a -> Array a
 tail xs | (length xs) <= 1 = []
